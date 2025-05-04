@@ -3,7 +3,6 @@
 WalletMCP is a Model Context Protocol (MCP) server implementation for interacting with the Solana blockchain. 
 It exposes developer-friendly tools for working with wallets, transactions, program buffers, logs, and SOL transfers through MCP-compatible interfaces.
 
----
 
 ## 🧠 Features
 
@@ -13,7 +12,6 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
 - 💸 Send SOL transactions programmatically.
 - 🧩 Fully MCP-compliant tool definitions using Zod for schema validation.
 
----
 
 ## ⚙️ Tools & Their Descriptions
 
@@ -53,8 +51,6 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
 - `amountSol` (number)
 - `mode` ("main" | "dev")
 
----
-
 ## 🔧 Technologies Used
 
 - **Solana Web3.js SDK** – Solana blockchain interaction
@@ -62,14 +58,12 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
 - **Zod** – Input validation
 - **TypeScript** – Strong typing and modern tooling
 
----
 
 ## 📋 Requirements
 
 - Node.js v16+
 - Yarn or npm
 
----
 
 ## 🚀 Getting Started
 
@@ -84,8 +78,17 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
    ```
 
 3. **Use registered tools via MCP clients**
+### For Claude Desktop
+Run the following command this command to open the Claude Desktop Config File
+On Windows:
+```bash
+   code $env:AppData\Claude\claude_desktop_config.json
 
----
+```
+On Mac/Linux:
+```bash
+   code ~/Library/Application\ Support/Claude/claude_desktop_config.json
+```
 
 ## 🛡️ Security Considerations
 
