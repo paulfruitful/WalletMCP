@@ -15,16 +15,6 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
 
 ---
 
-## 📦 Project Structure
-
-```
-walletmcp/
-├── index.ts
-└── README.md
-```
-
----
-
 ## ⚙️ Tools & Their Descriptions
 
 ### `getTransactions`
