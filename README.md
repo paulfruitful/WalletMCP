@@ -66,37 +66,76 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
 
 
 ## 🚀 Getting Started
-
-1. **Install dependencies**
+1. Clone the repository
+   ```bash
+   git clone https://github.com/paulfruitful/WalletMCP
+ ```
+ ```bash
+   cd WalletMCP
+   ```
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. **Run the MCP Server**
+3. **Build the MCP Server**
    ```bash
    npm run build
    ```
+## Test The Server:
+To test the server you can use Claude Desktop MCP Client. Click here to download the desktop application:
+[Download Claude Desktop](https://claude.ai/download)
 
-3. **Use registered tools via MCP clients**
 ### For Claude Desktop
 Run the following command this command to open the Claude Desktop Config File
-On Windows:
+
+**On Windows**:
 ```bash
    code $env:AppData\Claude\claude_desktop_config.json
 
 ```
-On Mac/Linux:
+**On Mac/Linux**:
 ```bash
    code ~/Library/Application\ Support/Claude/claude_desktop_config.json
 ```
+After opening the config file, add the server:
+
+```json
+{
+  "mcpServers": {
+    "walletmcp": {
+      "command": "node",
+      "args": [
+          "YOUR_PATH_PREFIX\\WalletMCP\\build\\index.js"
+      ]
+  }
+  }
+}```
+
+It's all set! 
+You can now use the tools provided by the server in Claude Desktop.
+You can activate these tools on the Claude client by asking questions relating to the Solana wallet.
+
+Questions & Prompts like:
+- "What are my recent transactions?"
+
+- "How much SOL do I have?"
+
+![Claim Rents Back](./assets/image.png)
+
+
+- "How many buffers do I have unused?"
+- "Can You send SOL to account [accountAddress]?"
+- "What are the logs for a specific program [programId]?"
 
 ## 🛡️ Security Considerations
 
 - Always protect your private keys.
-- Never expose secret keys or send SOL from unsecured sources.
+- Keys are not stored or logged in the server
 
----
 
-## 📄 License
 
-MIT License.
+## 🤝 Contributing
+
+This project is open to contributions from the Solana dev community.
+If you have ideas for improvements, feel free to open an issue or submit a pull request.
