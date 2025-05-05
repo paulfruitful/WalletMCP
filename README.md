@@ -3,6 +3,10 @@
 WalletMCP is a Model Context Protocol (MCP) server implementation for interacting with the Solana blockchain. 
 It exposes developer-friendly tools for working with wallets, transactions, program buffers, logs, and SOL transfers through MCP-compatible interfaces.
 
+## 📺 Demo Video
+
+[![WalletMCP Demo](https://img.youtube.com/vi/rq2KudYZCrQ/0.jpg)](https://www.youtube.com/watch?v=rq2KudYZCrQ)
+*Click the image above to watch the demo video*
 
 ## 🧠 Features
 
@@ -33,9 +37,9 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
    git clone https://github.com/paulfruitful/WalletMCP
  ```
 
- ```bash
- cd WalletMCP
- ```
+   ```bash
+   cd walletMCP
+   ```
 2. **Install dependencies**
    ```bash
    npm install
