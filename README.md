@@ -116,12 +116,13 @@ It's all set!
 You can now use the tools provided by the server in Claude Desktop.
 You can activate these tools on the Claude client by asking questions relating to the Solana wallet.
 
+![Claim Rents Back](./assets/image.png)
+
 Questions & Prompts like:
 - "What are my recent transactions?"
 
 - "How much SOL do I have?"
 
-![Claim Rents Back](./assets/image.png)
 
 
 - "How many buffers do I have unused?"
