@@ -70,9 +70,10 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
    ```bash
    git clone https://github.com/paulfruitful/WalletMCP
  ```
+
  ```bash
-   cd WalletMCP
-   ```
+ cd WalletMCP
+ ```
 2. **Install dependencies**
    ```bash
    npm install
@@ -110,7 +111,8 @@ After opening the config file, add the server:
       ]
   }
   }
-}```
+}
+```
 
 It's all set! 
 You can now use the tools provided by the server in Claude Desktop.
