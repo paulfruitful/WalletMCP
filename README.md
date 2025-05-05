@@ -13,44 +13,6 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
 - 🧩 Fully MCP-compliant tool definitions using Zod for schema validation.
 
 
-## ⚙️ Tools & Their Descriptions
-
-### `getTransactions`
-**Description**: Retrieve recent transactions of a wallet.  
-**Inputs**:
-- `walletAddress` (string)
-- `limit` (number) - maximum number of transactions to fetch.
-
-### `getBalance`
-**Description**: Fetch the SOL balance of a wallet.  
-**Inputs**:
-- `walletAddress` (string)
-
-### `listBuffers`
-**Description**: List program buffers associated with a payer key.  
-**Inputs**:
-- `payerKey` (array of numbers)
-
-### `closeBuffer`
-**Description**: Close a buffer and return lamports to the payer.  
-**Inputs**:
-- `bufferPubkey` (string)
-- `payerKey` (array of numbers)
-
-### `getProgramLogs`
-**Description**: Fetch transaction logs from a specific program ID.  
-**Inputs**:
-- `programId` (string)
-- `limit` (number) - optional, default is 10
-
-### `sendSolTransaction`
-**Description**: Send SOL from one wallet to another.  
-**Inputs**:
-- `fromPrivateKey` (array of numbers)
-- `toPublicKeyStr` (string)
-- `amountSol` (number)
-- `mode` ("main" | "dev")
-
 ## 🔧 Technologies Used
 
 - **Solana Web3.js SDK** – Solana blockchain interaction
@@ -130,6 +92,46 @@ Questions & Prompts like:
 - "How many buffers do I have unused?"
 - "Can You send SOL to account [accountAddress]?"
 - "What are the logs for a specific program [programId]?"
+
+
+## ⚙️ Tools & Their Descriptions
+
+### `getTransactions`
+**Description**: Retrieve recent transactions of a wallet.  
+**Inputs**:
+- `walletAddress` (string)
+- `limit` (number) - maximum number of transactions to fetch.
+
+### `getBalance`
+**Description**: Fetch the SOL balance of a wallet.  
+**Inputs**:
+- `walletAddress` (string)
+
+### `listBuffers`
+**Description**: List program buffers associated with a payer key.  
+**Inputs**:
+- `payerKey` (array of numbers)
+
+### `closeBuffer`
+**Description**: Close a buffer and return lamports to the payer.  
+**Inputs**:
+- `bufferPubkey` (string)
+- `payerKey` (array of numbers)
+
+### `getProgramLogs`
+**Description**: Fetch transaction logs from a specific program ID.  
+**Inputs**:
+- `programId` (string)
+- `limit` (number) - optional, default is 10
+
+### `sendSolTransaction`
+**Description**: Send SOL from one wallet to another.  
+**Inputs**:
+- `fromPrivateKey` (array of numbers)
+- `toPublicKeyStr` (string)
+- `amountSol` (number)
+- `mode` ("main" | "dev")
+
 
 ## 🛡️ Security Considerations
 
