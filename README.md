@@ -6,6 +6,7 @@ It exposes developer-friendly tools for working with wallets, transactions, prog
 ## 📺 Demo Video
 
 [![WalletMCP Demo](https://img.youtube.com/vi/rq2KudYZCrQ/0.jpg)](https://www.youtube.com/watch?v=rq2KudYZCrQ)
+<br/>
 *Click the image above to watch the demo video*
 
 ## 🧠 Features
